@@ -37,7 +37,7 @@ const ProfileInfo = ({ userProfile }) => {
 					<div className='flex gap-2 items-center flex-col'>
 						
 						<a
-							href= {`https://github.com/AnkushDelhi`}
+							href= {`https://github.com/`}
 							target='_blank'
 							rel='noreferrer'
 							className='bg-glass font-medium w-full text-xs p-2 rounded-md cursor-pointer border border-blue-400 flex items-center gap-2'
