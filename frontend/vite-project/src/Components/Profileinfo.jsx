@@ -5,6 +5,7 @@ import { RiGitRepositoryFill, RiUserFollowFill, RiUserFollowLine } from "react-i
 import { FaXTwitter } from "react-icons/fa6";
 import { TfiThought } from "react-icons/tfi";
 import { formatMemberSince } from "../../../utils/function";
+import LikeProfile from "./LikeProfile";
 
 const ProfileInfo = ({ userProfile }) => {
 	// const userProfile = {
@@ -35,9 +36,10 @@ const ProfileInfo = ({ userProfile }) => {
 					{/* View on Github */}
 
 					<div className='flex gap-2 items-center flex-col'>
+						<LikeProfile userProfile={userProfile} />
 						
 						<a
-							href= {`https://github.com/`}
+							href= {userProfile?.html_url}
 							target='_blank'
 							rel='noreferrer'
 							className='bg-glass font-medium w-full text-xs p-2 rounded-md cursor-pointer border border-blue-400 flex items-center gap-2'

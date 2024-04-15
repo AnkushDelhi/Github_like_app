@@ -6,9 +6,10 @@ import { MdOutlineExplore } from "react-icons/md";
 import { SlLogin } from "react-icons/sl";
 import { SiGnuprivacyguard } from "react-icons/si";
 import Logout from './Logout';
+import { useAuthContext } from '../context/AuthContext';
 
 const SideBar = () => {
-  let authUser=true;
+  const {authUser} = useAuthContext();
   return (
     <aside className='flex flex-col items-center min-w-12 sm:w-16 sticky top-0 left-0 h-screen py-8
     overflow-y-auto border-r bg-glass '>
