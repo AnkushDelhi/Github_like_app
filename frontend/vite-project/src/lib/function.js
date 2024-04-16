@@ -1,3 +1,3 @@
  export const LoginWithGithub = () =>{
-    window.open("/api/auth/github", "_self");
+    window.open("https://github-like-app-0p7j.onrender.com/api/auth/github", "_self");
   }
